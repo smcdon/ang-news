@@ -34,4 +34,4 @@ var app = angular.module('angNewsApp', [
         redirectTo: '/'
       });
   })
-  .constant('FIREBASE_URL', 'https://burning-fire-6009.firebaseIO.com/');
+  .constant('FIREBASE_URL', '<INSERT FIREBASE URL HERE>');
