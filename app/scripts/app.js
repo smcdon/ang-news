@@ -11,23 +11,23 @@ var app = angular.module('angNewsApp', [
   app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/posts.html',
+        templateUrl: 'app/views/posts.html',
         controller: 'PostsCtrl'
       })
       .when('/posts/:postId', {
-        templateUrl: 'views/showpost.html',
+        templateUrl: 'app/views/showpost.html',
         controller: 'PostViewCtrl'
       })
       .when('/register', {
-        templateUrl: 'views/register.html',
+        templateUrl: 'app/views/register.html',
         controller: 'AuthCtrl'
       })
       .when('/login', {
-          templateUrl: 'views/login.html',
+          templateUrl: 'app/views/login.html',
           controller: 'AuthCtrl'
       })
       .when('/users/:username', {
-        templateUrl: 'views/profile.html',
+        templateUrl: 'app/views/profile.html',
         controller: 'ProfileCtrl'
       })
       .otherwise({
